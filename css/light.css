@@ -1,0 +1,85 @@
+body.light{
+	background-color: #f0f0f0;
+}
+body.light #form{
+    
+    background-color: rgb(200, 214, 224);
+}
+body.light #form h1{
+    color:  rgb(90, 112, 145); 
+}
+body.light #form button{
+    color: black;
+    background-color: rgb(90, 112, 145); 
+}
+body.light #form label{
+color:black;
+}
+
+/* them section */
+body.light .label{
+	display: flex;
+	background: #fefefe;
+	border-radius: 50px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+/*	transform: scale(1.5);*/
+	box-sizing: border-box;
+}
+body.light .ball{
+	background: #000;
+	position: absolute;
+	width: 22px;
+	height:22px;
+	border-radius: 50%;
+	top: 2px;
+	left: 2px;
+	box-sizing: border-box;
+	transition: transform 0.2s linear;
+}
+.checkbox{
+	opacity: 0;
+	position: absolute;	
+}
+.label{
+	display: flex;
+	background: #000;
+	border-radius: 50px;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	box-sizing: border-box;s
+/*	transform: scale(1.5);*/
+}
+.fa-moon{
+	color: #f39c12;
+    /* #ff1c40f; */
+	font-size: 17px;
+	font-weight: 600;
+	}
+.fa-sun{
+	color: #f39c12;
+	font-size: 17px;
+	font-weight: 600;
+	}
+.ball{
+	background: #fff;
+	position: absolute;
+	width: 22px;
+	height:22px;
+	border-radius: 50%;
+	top: 2px;
+	left: 2px;
+	box-sizing: border-box;
+	transition: transform 0.2s linear;
+}
+.checkbox:checked + .label .ball{
+	transform: translateX(24px);
+}

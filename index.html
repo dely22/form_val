@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/light.css" type="text/css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>validation form</title>
+  </head>
+  <body>
+
+    <div class="container">
+      
+    <!--	Theme swicher -->
+   <div class="swicher">
+    <input type="checkbox" class="checkbox" id="checkbox">
+      <label  for="checkbox" class="label">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+        <div class="ball"></div>
+      </label>
+    </div>
+      <form id="form" action="">
+        <h1>Registration</h1>
+        <div class="input-control">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="text" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="password2">Password again</label>
+          <input id="password2" name="password2" type="password" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="age">aga</label>
+          <input id="age" name="age" type="number" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="tel">phone</label>
+          <input id="tel" name="tel" type="tel" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="url">your link</label>
+          <input type="url" id="url" />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <textarea
+            id="textarea"
+            name="textarea"
+            rows="5"
+            cols="30"
+            placeholder="Write something here whith at least 20 char"
+          ></textarea>
+          <div class="error"></div>
+        </div>
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
